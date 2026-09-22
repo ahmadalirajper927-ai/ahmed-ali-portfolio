@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ahmed Ali | Frontend Developer</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif}
+.gradient{background:linear-gradient(90deg,#818cf8,#c084fc);-webkit-background-clip:text;background-clip:text;color:transparent}
+.glass{backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.reveal{opacity:0;transform:translateY(22px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+.card{transition:.25s ease}.card:hover{transform:translateY(-6px);border-color:#6366f1}
+</style>
+</head>
+<body class="bg-slate-950 text-white">
+<header class="fixed top-0 z-50 w-full border-b border-white/10 bg-slate-950/80 glass">
+<div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+<a href="#home" class="text-xl font-bold">Ahmed<span class="text-indigo-400">.</span></a>
+<nav class="hidden gap-7 text-sm text-slate-300 md:flex">
+<a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+</nav>
+<button id="menu" class="rounded-lg border border-white/10 px-3 py-2 md:hidden">☰</button>
+</div>
+<div id="mobile" class="hidden border-t border-white/10 px-6 pb-4 md:hidden">
+<div class="flex flex-col gap-4 pt-4 text-slate-300"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></div>
+</div>
+</header>
+
+<main>
+<section id="home" class="mx-auto flex min-h-screen max-w-6xl items-center px-6 pt-24">
+<div class="grid w-full items-center gap-12 md:grid-cols-[1.2fr_.8fr]">
+<div class="reveal">
+<p class="mb-4 inline-flex rounded-full border border-indigo-400/30 bg-indigo-400/10 px-4 py-2 text-sm text-indigo-300">Available for Frontend Internship</p>
+<h1 class="text-5xl font-black leading-tight sm:text-6xl">Hi, I'm <span class="gradient">Ahmed Ali</span></h1>
+<p class="mt-5 text-xl font-semibold text-slate-200">Frontend Developer</p>
+<p class="mt-4 max-w-xl leading-7 text-slate-400">I build responsive, clean and modern websites using HTML, CSS, Tailwind CSS, Bootstrap and JavaScript.</p>
+<div class="mt-8 flex flex-wrap gap-4"><a href="#projects" class="rounded-xl bg-indigo-500 px-6 py-3 font-semibold hover:bg-indigo-400">View Projects</a><a href="#contact" class="rounded-xl border border-white/15 px-6 py-3 font-semibold hover:bg-white/5">Contact Me</a></div>
+</div>
+<div class="reveal mx-auto w-64 sm:w-80"><div class="rounded-[2rem] border border-white/10 bg-white/5 p-3 shadow-2xl"><div class="aspect-square overflow-hidden rounded-[1.5rem]"><img src="assets/profile.jpg" alt="Ahmed Ali" class="h-full w-full object-cover object-[center_22%]"></div></div></div>
+</div>
+</section>
+
+<section id="about" class="mx-auto max-w-6xl px-6 py-24"><div class="reveal"><p class="text-sm font-semibold uppercase tracking-widest text-indigo-400">About Me</p><h2 class="mt-2 text-3xl font-bold">Building websites with a focus on clean UI.</h2><p class="mt-5 max-w-3xl leading-8 text-slate-400">I'm a fresher Frontend Developer focused on creating responsive and user-friendly websites. I'm continuously improving my skills and looking for an internship opportunity where I can learn, contribute and grow as a developer.</p></div></section>
+
+<section id="skills" class="bg-white/[.03] py-24"><div class="mx-auto max-w-6xl px-6"><div class="reveal"><p class="text-sm font-semibold uppercase tracking-widest text-indigo-400">Skills</p><h2 class="mt-2 text-3xl font-bold">My Technical Skills</h2></div><div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+<div class="card reveal rounded-2xl border border-white/10 bg-slate-900 p-6"><b>HTML5</b><p class="mt-2 text-sm text-slate-400">Semantic & structured markup</p></div>
+<div class="card reveal rounded-2xl border border-white/10 bg-slate-900 p-6"><b>CSS3</b><p class="mt-2 text-sm text-slate-400">Responsive layouts & styling</p></div>
+<div class="card reveal rounded-2xl border border-white/10 bg-slate-900 p-6"><b>Tailwind CSS</b><p class="mt-2 text-sm text-slate-400">Modern utility-first UI</p></div>
+<div class="card reveal rounded-2xl border border-white/10 bg-slate-900 p-6"><b>Bootstrap</b><p class="mt-2 text-sm text-slate-400">Responsive components</p></div>
+<div class="card reveal rounded-2xl border border-white/10 bg-slate-900 p-6"><b>JavaScript</b><p class="mt-2 text-sm text-slate-400">Basic DOM & interactions</p></div>
+<div class="card reveal rounded-2xl border border-white/10 bg-slate-900 p-6"><b>jQuery</b><p class="mt-2 text-sm text-slate-400">Basic interactive features</p></div>
+<div class="card reveal rounded-2xl border border-white/10 bg-slate-900 p-6"><b>PHP</b><p class="mt-2 text-sm text-slate-400">Basic backend knowledge</p></div>
+<div class="card reveal rounded-2xl border border-white/10 bg-slate-900 p-6"><b>WordPress</b><p class="mt-2 text-sm text-slate-400">Basic website development</p></div>
+</div></div></section>
+
+<section id="projects" class="mx-auto max-w-6xl px-6 py-24"><div class="reveal"><p class="text-sm font-semibold uppercase tracking-widest text-indigo-400">Projects</p><h2 class="mt-2 text-3xl font-bold">Selected Work</h2></div><div class="mt-10 grid gap-6 md:grid-cols-3">
+<div class="card reveal rounded-2xl border border-white/10 bg-white/5 p-6"><div class="text-3xl">🍕</div><h3 class="mt-5 text-xl font-bold">Pizza Website</h3><p class="mt-3 text-sm leading-6 text-slate-400">Responsive pizza-selling website built with HTML and Tailwind CSS.</p><span class="mt-5 inline-block text-sm text-indigo-300">HTML · Tailwind CSS</span></div>
+<div class="card reveal rounded-2xl border border-white/10 bg-white/5 p-6"><div class="text-3xl">❓</div><h3 class="mt-5 text-xl font-bold">FAQ Accordion</h3><p class="mt-3 text-sm leading-6 text-slate-400">Interactive FAQ component with show/hide behavior.</p><span class="mt-5 inline-block text-sm text-indigo-300">HTML · Tailwind · jQuery</span></div>
+<div class="card reveal rounded-2xl border border-white/10 bg-white/5 p-6"><div class="text-3xl">💻</div><h3 class="mt-5 text-xl font-bold">Developer Portfolio</h3><p class="mt-3 text-sm leading-6 text-slate-400">Modern responsive portfolio for showcasing skills and projects.</p><span class="mt-5 inline-block text-sm text-indigo-300">HTML · Tailwind · JavaScript</span></div>
+</div></section>
+
+<section id="education" class="bg-white/[.03] py-24"><div class="mx-auto max-w-6xl px-6"><div class="reveal"><p class="text-sm font-semibold uppercase tracking-widest text-indigo-400">Education</p><h2 class="mt-2 text-3xl font-bold">Academic Background</h2></div><div class="mt-10 grid gap-6 md:grid-cols-2">
+<div class="reveal rounded-2xl border border-white/10 bg-slate-900 p-7"><p class="text-sm text-indigo-300">Currently Continuing</p><h3 class="mt-2 text-xl font-bold">B.Sc</h3></div>
+<div class="reveal rounded-2xl border border-white/10 bg-slate-900 p-7"><p class="text-sm text-indigo-300">Completed</p><h3 class="mt-2 text-xl font-bold">Intermediate</h3></div>
+</div></div></section>
+
+<section id="contact" class="mx-auto max-w-6xl px-6 py-24"><div class="reveal rounded-3xl border border-indigo-400/20 bg-indigo-500/10 p-8 text-center md:p-12"><p class="text-sm font-semibold uppercase tracking-widest text-indigo-300">Get In Touch</p><h2 class="mt-3 text-3xl font-bold sm:text-4xl">Let's work and learn together.</h2><p class="mx-auto mt-4 max-w-2xl text-slate-400">I'm currently looking for frontend internship opportunities.</p><div class="mt-8 flex flex-wrap justify-center gap-4 text-sm"><a class="rounded-xl bg-white px-5 py-3 font-semibold text-slate-900" href="mailto:aliahmedrajper257@gmail.com">Email Me</a><a class="rounded-xl border border-white/15 px-5 py-3" target="_blank" href="https://www.linkedin.com/in/ahmad-ali">LinkedIn</a><a class="rounded-xl border border-white/15 px-5 py-3" href="tel:03062174976">0306 2174976</a></div><p class="mt-5 text-sm text-slate-500">Islamabad, Pakistan</p></div></section>
+</main>
+<footer class="border-t border-white/10 py-7 text-center text-sm text-slate-500">© 2026 Ahmed Ali. Frontend Developer Portfolio.</footer>
+<script>
+const m=document.getElementById('menu'),mm=document.getElementById('mobile');m.onclick=()=>mm.classList.toggle('hidden');mm.querySelectorAll('a').forEach(a=>a.onclick=()=>mm.classList.add('hidden'));
+const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(e=>o.observe(e));
+</script>
+</body></html>
